@@ -1,0 +1,118 @@
+.shop-page {
+  padding: var(--espacio-md) 0;
+}
+
+.search-bar {
+  margin-bottom: var(--espacio-lg);
+}
+
+.search-input {
+  width: 100%;
+  padding: var(--espacio-sm);
+  border: 2px solid var(--plomo-medio);
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.product-card {
+  background: var(--blanco);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-image {
+  height: 200px;
+  overflow: hidden;
+}
+
+.product-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.product-info {
+  padding: var(--espacio-md);
+}
+
+.product-title {
+  font-size: 1.2rem;
+  margin-bottom: var(--espacio-xs);
+  color: var(--negro);
+}
+
+.product-platform {
+  color: var(--morado-principal);
+  font-size: 0.9rem;
+  margin-bottom: var(--espacio-xs);
+}
+
+.product-category {
+  background-color: var(--plomo-claro);
+  color: var(--plomo-oscuro);
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  display: inline-block;
+  margin-bottom: var(--espacio-sm);
+}
+
+.product-description {
+  color: var(--plomo-oscuro);
+  margin-bottom: var(--espacio-md);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.product-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-price {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--azul-principal);
+}
+
+.filters {
+  background: var(--blanco);
+  padding: var(--espacio-md);
+  border-radius: 8px;
+  margin-bottom: var(--espacio-lg);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.filter-group {
+  margin-bottom: var(--espacio-md);
+}
+
+.filter-group label {
+  display: block;
+  margin-bottom: var(--espacio-xs);
+  font-weight: 600;
+  color: var(--negro);
+}
+
+.filter-select {
+  width: 100%;
+  padding: var(--espacio-xs);
+  border: 1px solid var(--plomo-medio);
+  border-radius: 4px;
+  background-color: var(--blanco);
+}
+
+@media (min-width: 768px) {
+  .shop-content {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    gap: var(--espacio-lg);
+  }
+}

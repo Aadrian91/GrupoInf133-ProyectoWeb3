@@ -1,0 +1,16 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+  padding: var(--espacio-md) 0;
+}
+
+.loading {
+  text-align: center;
+  padding: var(--espacio-xl);
+  color: var(--plomo-oscuro);
+}
