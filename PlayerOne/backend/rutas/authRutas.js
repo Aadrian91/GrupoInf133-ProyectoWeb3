@@ -1,10 +1,17 @@
 import express from 'express';
-import { registrarUsuario, loginUsuario, verificarToken } from '../controladores/authControlador.js';
+import { 
+    registrarUsuarioController, 
+    loginUsuarioController, 
+    verificarTokenController 
+} from '../controladores/authControlador.js';
+
+import { validarRegistro, validarLogin } from '../middleware/validacionMiddleware.js';
 
 const router = express.Router();
 
-router.post('/registro', registrarUsuario);
-router.post('/login', loginUsuario);
-router.get('/verificar', verificarToken);
+// Rutas con validación
+router.post('/registro', validarRegistro, registrarUsuarioController);
+router.post('/login', validarLogin, loginUsuarioController);
+router.get('/verificar', verificarTokenController);
 
 export default router;
